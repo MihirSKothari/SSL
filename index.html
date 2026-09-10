@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Samsara Sonic Labs — Logo System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEE9DD;
+    --ink:#1C201D;
+    --ink-soft:#5B5F58;
+    --accent:#BD8A45;
+    --line:rgba(28,32,29,0.14);
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Space Grotesk', sans-serif;
+    padding:64px 40px 96px;
+  }
+  .wrap{ max-width:920px; margin:0 auto; }
+
+  .parent{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding-bottom:56px;
+    margin-bottom:56px;
+    border-bottom:1px solid var(--line);
+  }
+  .parent svg{ width:96px; height:96px; }
+  .parent .name{
+    margin-top:22px;
+    font-size:22px;
+    font-weight:500;
+    letter-spacing:0.01em;
+  }
+  .parent .tag{
+    margin-top:6px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    letter-spacing:0.04em;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:18px;
+  }
+  .tile{
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:36px 20px 26px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    background:transparent;
+  }
+  .tile svg{ width:52px; height:52px; }
+  .tile .name{
+    margin-top:18px;
+    font-size:16px;
+    font-weight:500;
+  }
+  .tile .desc{
+    margin-top:4px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    letter-spacing:0.02em;
+  }
+
+  @media (max-width:640px){
+    .grid{ grid-template-columns:repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="parent">
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="23" stroke="var(--ink)" stroke-width="2"/>
+      <circle cx="32" cy="32" r="14" stroke="var(--ink)" stroke-width="1.4" opacity="0.55"/>
+      <path d="M10,32 Q19,20 27,32 T44,32" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M44,32 Q49,26 54,32" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="32" cy="32" r="2.6" fill="var(--accent)"/>
+    </svg>
+    <div class="name">Samsara Sonic Labs</div>
+  </div>
+
+  <div class="grid">
+
+    <div class="tile">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8,26 Q16,20 24,26 Q32,32 40,26 Q48,20 56,26" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M8,37 Q16,32 24,37 Q32,42 40,37 Q48,32 56,37" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+        <circle cx="56" cy="26" r="2.4" fill="var(--accent)"/>
+      </svg>
+      <div class="name">Tide</div>
+      <div class="desc">01</div>
+    </div>
+
+    <div class="tile">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32,12 C24,22 20,32 24,42 C26,46 30,48 34,46 C40,43 42,36 38,30 C38,36 34,38 32,36 C30,33 32,28 36,24 C33,20 32,16 32,12 Z" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="32" cy="12" r="2.4" fill="var(--accent)"/>
+      </svg>
+      <div class="name">Ember</div>
+      <div class="desc">02</div>
+    </div>
+
+    <div class="tile">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,16 L54,16" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M10,16 Q20,40 32,42 Q44,40 54,16" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="32" cy="42" r="2.4" fill="var(--accent)"/>
+      </svg>
+      <div class="name">Veil</div>
+      <div class="desc">03</div>
+    </div>
+
+    <div class="tile">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32,12 L32,30" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M32,30 Q23,36 17,50" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M32,30 L32,52" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+        <path d="M32,30 Q41,36 47,50" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="32" cy="12" r="2.4" fill="var(--accent)"/>
+      </svg>
+      <div class="name">Root</div>
+      <div class="desc">04</div>
+    </div>
+
+    <div class="tile">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32,9 L50,20 L50,42 L32,55 L14,42 L14,20 Z" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M14,20 L32,31 L50,20" stroke="var(--ink)" stroke-width="1.4" opacity="0.55"/>
+        <path d="M32,31 L32,55" stroke="var(--ink)" stroke-width="1.4" opacity="0.55"/>
+        <circle cx="41" cy="16" r="2.2" fill="var(--accent)"/>
+      </svg>
+      <div class="name">Glass</div>
+      <div class="desc">05</div>
+    </div>
+
+    <div class="tile">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="32" cy="32" rx="23" ry="10" stroke="var(--ink)" stroke-width="2" transform="rotate(-22 32 32)"/>
+        <circle cx="32" cy="32" r="5" stroke="var(--ink)" stroke-width="2"/>
+        <circle cx="50" cy="21" r="2.6" fill="var(--accent)"/>
+      </svg>
+      <div class="name">Orbit</div>
+      <div class="desc">06</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
